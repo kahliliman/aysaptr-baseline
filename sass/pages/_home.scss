@@ -7,7 +7,6 @@
 		align-items: center;
     	display: flex;
     	flex-direction: row;
-   		// justify-content: stretch;
 	}
 
 	&__text-box {
@@ -87,4 +86,27 @@
 			}
 		}
 	}
+}
+
+.contact {
+
+	margin-top: $gutter-vertical;
+	padding: 0 $container-padding;
+
+	.flex-grid {
+		align-items: center;
+    	display: flex;
+    	flex-direction: row;
+	}
+
+	&__form {
+		flex-grow: 1;
+		margin: 0 2rem;
+	}
+
+	&__image {
+		width: 41rem;
+		flex-grow: 1;
+	}
+
 }
