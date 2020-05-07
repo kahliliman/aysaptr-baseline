@@ -2,5 +2,10 @@
 Baseline of the aysaputri.com website
 
 
-# Installation
+## Installation
+
+Install dependencies using this code
 ```npm install```
+
+Install `live-server`
+```node install live-server```
