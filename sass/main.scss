@@ -1,0 +1,53 @@
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+
+
+
+
+@font-face{
+	font-family: "Futura PT";
+	font-weight: 300;
+	src: url(fonts/FuturaPTLight.otf) format('opentype');
+}
+
+@font-face{
+	font-family: "Futura PT";
+	font-weight: 400;
+	src: url(fonts/FuturaPTBook.otf) format('opentype');
+}
+
+@font-face{
+	font-family: "Futura PT";
+	font-weight: 600;
+	src: url(fonts/FuturaPTDemi.otf) format('opentype');
+}
+@font-face{
+	font-family: "Futura PT";
+	font-family: 500;
+	src: url(fonts/FuturaPTMedium.otf) format('opentype');
+}
+
+
+.container {
+	margin: 0 4rem;
+
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+

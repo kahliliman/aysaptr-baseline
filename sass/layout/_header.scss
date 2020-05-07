@@ -1,0 +1,15 @@
+.header {
+	background-color: $color-primary;
+	height: 4rem;
+
+	ul {
+	list-style: none;
+
+	li:not(:last-child) {
+		padding: 1.5rem 0rem 1.5rem 2rem;		
+	}
+	li:last-child {
+		padding: 1.5rem 2rem 1.5rem 2rem;	
+		}
+	}
+}

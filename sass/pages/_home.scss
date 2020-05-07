@@ -1,0 +1,39 @@
+.section-intro {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+.text-span {
+	color: $color-primary;
+}
+
+.text-box {
+	text-align: center;
+}
+
+// MIN-WIDTH 1440
+
+.intro-img {
+	margin: 3.5rem 0;
+	// width: 41rem;
+}
+
+
+// MIN-WIDTH 1024
+
+// .intro-img {
+// 	margin: 3.5rem 0;
+// 	height: 28rem;
+// }
+
+.section-work {
+	display: flex;
+	// justify-content: flex-end;
+	// align-items: center;
+}
+
+.work-img {
+
+}
