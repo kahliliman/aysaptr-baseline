@@ -17,3 +17,36 @@ h1 {
 	font-weight: 400;
 	margin-bottom: $gutter-vertical-small;
 }
+
+h2 {
+	font-size: 1.75rem;
+	
+	color: $color-dark-main;
+	font-weight: 600;
+	margin-top: $gutter-vertical-extra-small;
+}
+
+.caption-date {
+	font-size: 0.75rem;
+
+	color: $color-dark-second;
+	font-weight: 500;
+	margin-top: $gutter-vertical-extra-small;
+}
+
+.caption {
+	font-size: 1.125rem;
+
+	color: $color-dark-second;
+	font-weight: 400;
+	margin-top: $gutter-vertical-extra-small;
+	line-height: 150%;
+}
+
+.form-label-item {
+	font-size: 1rem;
+
+	color: $color-dark-second;
+	font-weight: 400;
+	line-height: 100%;
+}

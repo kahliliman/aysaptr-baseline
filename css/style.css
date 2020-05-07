@@ -27,6 +27,31 @@ h1 {
   font-weight: 400;
   margin-bottom: 2rem; }
 
+h2 {
+  font-size: 1.75rem;
+  color: #232828;
+  font-weight: 600;
+  margin-top: 1rem; }
+
+.caption-date {
+  font-size: 0.75rem;
+  color: #5A5E5E;
+  font-weight: 500;
+  margin-top: 1rem; }
+
+.caption {
+  font-size: 1.125rem;
+  color: #5A5E5E;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 150%; }
+
+.form-label-item {
+  font-size: 1rem;
+  color: #5A5E5E;
+  font-weight: 400;
+  line-height: 100%; }
+
 .navbar {
   list-style: none;
   display: flex;
@@ -40,6 +65,45 @@ h1 {
     padding: 1.5rem 0rem 1.5rem 2rem; }
   .navbar__item:last-child {
     padding: 1.5rem 2rem 1.5rem 2rem; }
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell; }
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white; }
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -2rem; }
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 0.25rem;
+  width: 3rem;
+  margin: 0;
+  border-radius: 0; }
+
+.button-primary {
+  background-color: #70C0C0;
+  padding: 0.75rem 2rem;
+  border-radius: 0.25rem;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 100%;
+  text-decoration: none; }
 
 .header {
   padding: 0 4rem;
@@ -81,15 +145,33 @@ h1 {
     margin: 0 0 2rem 2rem; }
 
 .blog {
-  margin-top: 4rem; }
-  .blog .flex-grid {
+  margin-top: 4rem;
+  padding: 0 4rem; }
+  .blog .card {
+    max-width: 35rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    margin-right: 2rem;
+    counter-increment: gallery-cell; }
+    .blog .card__image {
+      object-fit: cover;
+      width: 35rem;
+      height: 14.5rem; }
+
+.freebies {
+  margin-top: 4rem;
+  padding: 0 4rem; }
+  .freebies .flex-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: -2rem; }
-  .blog__image {
-    max-width: 22.6%;
-    margin: 0 0 2rem 2rem; }
+    .freebies .flex-grid .card {
+      max-width: 22.6%;
+      margin: 0 0 2rem 2rem; }
+      .freebies .flex-grid .card__image {
+        object-fit: cover;
+        width: 100%; }
 
 @font-face {
   font-family: "Futura PT";
