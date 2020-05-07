@@ -1,15 +1,16 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/base";
 @import "base/typography";
+
+@import "components/navbar";
 
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
 
 @import "pages/home";
-
-
 
 
 @font-face{
@@ -34,20 +35,6 @@
 	font-family: 500;
 	src: url(fonts/FuturaPTMedium.otf) format('opentype');
 }
-
-
-.container {
-	margin: 0 4rem;
-
-}
-
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
 
 
 

@@ -1,15 +1,15 @@
 .header {
+	padding: 0 $container-padding;
 	background-color: $color-primary;
 	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 
-	ul {
-	list-style: none;
-
-	li:not(:last-child) {
-		padding: 1.5rem 0rem 1.5rem 2rem;		
-	}
-	li:last-child {
-		padding: 1.5rem 2rem 1.5rem 2rem;	
-		}
+	&__logo {
+		height : 2rem;
 	}
 }
+
+

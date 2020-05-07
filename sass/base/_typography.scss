@@ -2,27 +2,18 @@ body {
 	font-family: "Futura PT", sans-serif;
 	font-size: $default-font-size;
 	font-weight: 400;
-	line-height: 100%;
 	color: $color-dark-main;
 }
-
-
-.menu-item {
-	font-weight: 500;
-	color: $color-white;
-}
-
-
 
 .paragraph {
 	font-size: 1.5rem;
 	line-height: 150%;
 }
 
-.heading-1 {
+h1 {
 	font-size: 2.25rem;
 	
 	color: $color-primary;
 	font-weight: 400;
-
+	margin-bottom: $gutter-vertical-small;
 }

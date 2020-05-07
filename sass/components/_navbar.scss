@@ -1,0 +1,21 @@
+.navbar {	
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+
+	&__item a {
+		font-weight: 500;
+		color: $color-white;
+		text-decoration: none;
+		line-height: 100%;
+	}
+
+	&__item:not(:last-child) {
+		padding: 1.5rem 0rem 1.5rem 2rem;		
+	}
+
+	&__item:last-child {
+		padding: 1.5rem 2rem 1.5rem 2rem;	
+	}
+
+}

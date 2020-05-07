@@ -15,7 +15,10 @@ $color-black-80: #00000080;
 $default-font-size: 1rem;
 
 // GRID
-// $grid-width: 114rem;
+$grid-width: 100%;
 $gutter-vertical: 4rem;
-$gutter-vertical-small: 3rem;
+$gutter-vertical-small: 2rem;
 $gutter-horizontal: 2rem;
+
+// PADDINGS
+$container-padding: 4rem;

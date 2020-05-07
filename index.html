@@ -7,37 +7,43 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>  	    
-  	<div class="header">
-  		<div class="container flex-container">
-  			<img src="img/logo-box.png" height="32px" width="108px">
-  			<ul class="flex-container">
-  				<li class="menu-item">Works</li>
-  				<li class="menu-item">Blog</li>
-  				<li class="menu-item">Freebies</li>
-  				<li class="menu-item">Contact</li>
+  	<header class="header">
+  			<img class="header__logo" src="img/logo-box.png">
+  			<ul class="navbar">
+    				<li class="navbar__item"><a href="#">Works</a></li>
+            <li class="navbar__item"><a href="#">Blog</a></li>
+            <li class="navbar__item"><a href="#">Freebies</a></li>
+            <li class="navbar__item"><a href="#">Contact</a></li>
   			</ul>
-  		</div>
-  	</div>
-  	<div class="container">
-  		
-      <div class="section-intro row">
-  			<div class="text-box col-1-of-2">
-  				<p class="paragraph">Hello! <br> My name is <span class="text-span">Aysa Putri</span> and <br> I‘m a Hand Lettering Artist.</p>
-  			</div>
-  			<img class="intro-img col-1-of-2" src="img/persist.png">
-  		</div>
+  	</header>
 
-        <h1 class="heading-1">My Works</h1>
-      <div class="section-work row">
-        <img class="col-1-of-4" src="img/feel.png">
-        <img class="col-1-of-4" src="img/minimal.png">
-        <img class="col-1-of-4" src="img/feel.png">
-        <img class="col-1-of-4" src="img/minimal.png">
-        <img class="col-1-of-4" src="img/minimal.png">
-        <img class="col-1-of-4" src="img/feel.png">
-        <img class="col-1-of-4" src="img/minimal.png">
-        <img class="col-1-of-4" src="img/feel.png">
-      </div>
-  	</div>
+    <main>
+      <section class="intro">
+        <div class="flex-grid">        
+            <div class="intro__text-box">
+              <p class="paragraph">Hello! <br> My name is <span class="text-span">Aysa Putri</span> and <br> I‘m a Hand Lettering Artist.</p>
+            </div>
+          <div>
+            <img class="intro__image" src="img/persist.png">
+          </div>
+        </div>
+      </section>
+      
+      <section class="work">
+          <h1>My Works</h1>
+          <div class="flex-grid">
+            <img class="work__image" src="img/feel.png">
+            <img class="work__image" src="img/minimal.png">
+            <img class="work__image" src="img/feel.png">
+            <img class="work__image" src="img/minimal.png">
+            <img class="work__image" src="img/minimal.png">
+            <img class="work__image" src="img/feel.png">
+            <img class="work__image" src="img/minimal.png">
+            <img class="work__image" src="img/feel.png">
+          </div>
+      </section>
+
+    </main>
+
   </body>
 </html>
