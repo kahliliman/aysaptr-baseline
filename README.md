@@ -4,13 +4,7 @@ Baseline of the aysaputri.com website
 
 ## Installation
 
-Install dependencies using this code
-```npm install```
+1. Install node.js from https://nodejs.org/en/download/
+2. Install node dependencies using `npm install`
+3. Run `live-server`
 
-Install `live-server`
-<<<<<<< HEAD
-
-## 
-=======
-```node install live-server```
->>>>>>> 08a154176902e0a367e6f6473e1dcea709195cd2
