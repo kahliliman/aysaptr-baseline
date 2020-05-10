@@ -15,7 +15,7 @@ h1 {
 	
 	color: $color-primary;
 	font-weight: 400;
-	margin-bottom: $gutter-24;
+	margin: 0 0 $gutter-24 0;
 }
 
 h2 {
@@ -23,7 +23,7 @@ h2 {
 	
 	color: $color-dark-main;
 	font-weight: 600;
-	margin-top: $gutter-16;
+	margin: $gutter-16 0 0 0;
 }
 
 .caption-date {
@@ -31,7 +31,7 @@ h2 {
 
 	color: $color-dark-second;
 	font-weight: 500;
-	margin-top: $gutter-16;
+	margin: $gutter-16 0 0 0;
 }
 
 .caption {
@@ -39,7 +39,7 @@ h2 {
 
 	color: $color-dark-second;
 	font-weight: 400;
-	margin-top: $gutter-16;
+	margin: $gutter-16 0 0 0;
 	line-height: 150%;
 }
 

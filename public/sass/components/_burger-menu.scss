@@ -1,0 +1,31 @@
+.burger-menu {
+	height: 2rem;
+	width: 2rem;  
+	background-color: Transparent;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+	
+	background-image: url(../img/menu.svg);	
+}
+
+#myLinks {
+	display: none;
+}
+
+#myLinks a {
+  color: $color-dark-main;
+  margin: 0 auto;
+
+  &:not(:first-child) {
+  padding-bottom: 0.5rem;
+  }
+
+  &:not(:last-child) {
+  padding-bottom: 0.5rem;
+  }
+
+  text-decoration: none;
+  display: block;
+}
