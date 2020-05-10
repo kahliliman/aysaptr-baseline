@@ -1,6 +1,6 @@
 .footer {
 
-	margin-top: 4rem;
+	// margin-top: $gutter-64;
 
 	&__main {
 		background-color: $color-secondary-dark-1;	
@@ -25,7 +25,7 @@
 
 
 		&:not(:last-child) {
-		margin-right: 2rem;
+		margin-right: $gutter-16;
 			
 		}
 		// background-color: $color-secondary-light;

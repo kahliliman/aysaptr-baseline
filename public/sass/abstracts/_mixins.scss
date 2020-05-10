@@ -1,0 +1,11 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == tablet {
+        @media (min-width: 48em) {@content};
+    }
+    @if $breakpoint == laptop {
+        @media (min-width: 64em) {@content};
+    }
+    @if $breakpoint == laptop-l {
+        @media (min-width: 90em) {@content};
+    }
+}

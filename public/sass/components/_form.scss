@@ -1,4 +1,5 @@
 .form-style-1 {
+
 }
 
 .form-style-1 li {
@@ -44,21 +45,16 @@ select{
 	-moz-box-shadow: 0 0 0.5rem #88D5E9;
 	-webkit-box-shadow: 0 0 0.5rem #88D5E9;
 	box-shadow: 0 0 8px #88D5E9;
-	border: 0.063rem solid #88D5E9;
-}
-.form-style-1 .field-divided{
-	// width: 50%;
-	width: 47%;
-	&:not(:last-child) {
-	margin-right: 1.5rem;
-}
+	border: 0.0625rem solid #88D5E9;
 }
 
 .form-style-1 .field-long{
 	width: 100%;
+	height: 2.5rem;
 }
 .form-style-1 .field-select{
 	width: 100%;
+	height: 2.5rem;
 }
 .form-style-1 .field-textarea{
 	height: 6.25rem;
