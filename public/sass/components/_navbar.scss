@@ -2,6 +2,15 @@
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+	padding: 1rem $gutter-16;
+
+	@include respond(tablet) {
+		padding: 1rem $gutter-52;
+	}
+
+	@include respond(laptop) {
+		padding: 1rem $gutter-64;
+	}
 
 	&__item a {
 		font-weight: 500;
@@ -18,4 +27,21 @@
 		padding: 1.5rem 2rem 1.5rem 2rem;	
 	}
 
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    font-size: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0rem 1rem;
 }

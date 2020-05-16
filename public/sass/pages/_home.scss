@@ -3,17 +3,26 @@
 	margin-top: $gutter-32;
 	padding: 0 $gutter-16;
 
-	// .flex-grid {
-	// 	align-items: center;
- //    	display: flex;
- //    	flex-direction: row;
-	// }
+	@include respond(tablet) {
+		padding: 0 $gutter-52;
+	}
+
+	@include respond(laptop) {
+		padding: 0 $gutter-64;
+		margin-top: $gutter-64;
+	}
 
 	.flex-grid {
 		align-items: center;
     	display: flex;
     	flex-direction: column-reverse;
+
+
+		@include respond(laptop) {
+    		flex-direction: row;
+		}
 	}
+
 
 	&__text-box {
 		text-align: center;
@@ -27,7 +36,11 @@
 
 	&__image {
 		width: 100%;
-		flex-grow: 1;
+		// flex-grow: 1;
+
+		@include respond(tablet) {
+			width: 50%;
+		}
 	}
 
 }
@@ -36,19 +49,33 @@
 
 	margin-top: $gutter-32;
 	padding: 0 $gutter-16;
+	padding-top: 5rem;
 
-	// .flex-grid {
- //    	display: flex;
- //    	flex-direction: row;
- //    	// justify-content: space-between;
- //    	flex-wrap: wrap;
- //    	margin-left: -$gutter-32;
-	// }
+	@include respond(tablet) {
+		padding: 0 $gutter-52;
+		padding-top: 5rem;
+	}
+
+	@include respond(laptop) {
+		padding: 0 $gutter-64;
+		padding-top: 5rem;
+	}
+
+
 
 	.flex-grid {
     	display: flex;
     	flex-direction: column;
     	flex-wrap: wrap;
+
+    	@include respond(tablet) {
+	    	flex-direction: row;
+	    	margin-left: -$gutter-24;
+		}
+    	
+    	@include respond(laptop) {
+	    	margin-left: -$gutter-32;
+		}
 	}
 
 
@@ -57,9 +84,22 @@
 		width: 100%; 
 		margin: 0 0 $gutter-24 0;
 
-		// &:not(:last-child) {		
-		// 	margin: 0 0 $gutter-24 0;
-		// }
+		@include respond(tablet) {
+			width: 46.511627907%; 
+			height: 100%;
+			margin: 0 0 $gutter-24 $gutter-24;
+		}
+
+		@include respond(laptop) {
+			width: 29.8846982759%; 
+			height: 100%;
+			margin: 0 0 $gutter-32 $gutter-32;
+		}
+
+		@include respond(laptop-l) {
+			width: 22.6190476%; 
+		}
+
 	}
 }
 
@@ -67,6 +107,18 @@
 
 	margin: $gutter-32 0 $gutter-64 0;
 	padding: 0 $gutter-16;
+	padding-top: 5rem;
+
+	@include respond(tablet) {
+		padding: 0 $gutter-52;
+		padding-top: 5rem;
+	}
+
+	@include respond(laptop) {
+		padding: 0 $gutter-64;
+		margin-top: $gutter-64;
+		padding-top: 5rem;
+	}
 
 	// .card {
 	// 	max-width: 35rem;
@@ -85,14 +137,23 @@
 		max-width: 15rem;
 		border-radius: 0.625rem;
 		overflow: hidden;
-		margin-right: $gutter-24;
+		margin-right: $gutter-32;
 		counter-increment: gallery-cell;
 		border: none;
+
+		@include respond(laptop) {
+			max-width: 35rem;
+		}
 
 		&__image {
 			object-fit: cover;
 			// width:100%;
-			height:15rem;
+			max-height:15rem;
+
+			@include respond(laptop) {
+				width: 35rem;
+				height: 14.5rem;
+			}
 		}
 
 
@@ -103,33 +164,54 @@
 
 	margin-top: $gutter-32;
 	padding: 0 $gutter-16;
+	padding-top: 5rem;
 
-	// .flex-grid {
- //    	display: flex;
- //    	flex-direction: row;
- //    	flex-wrap: wrap;
- //    	margin-left: -$gutter-32;
-		
-	// 	.card {
-	// 		max-width: 22.6%; 
-	// 		margin: 0 0 $gutter-32 $gutter-32;
+	@include respond(tablet) {
+		padding: 0 $gutter-52;
+		padding-top: 5rem;
+	}
 
-	// 		&__image {
-	// 			object-fit: cover;
-	// 			width: 100%; 
-	// 		}
-	// 	}
-	// }
+
+	@include respond(laptop) {
+		padding: 0 $gutter-64;
+		margin-top: $gutter-64;
+		padding-top: 5rem;
+	}
 
 	.flex-grid {
     	display: flex;
     	flex-direction: column;
     	flex-wrap: wrap;
+
+    	@include respond(tablet) {
+	    	flex-direction: row;
+	    	margin-left: -$gutter-24;
+		}
+
+    	@include respond(laptop) {
+	    	flex-direction: row;
+	    	margin-left: -$gutter-32;
+		}
 		
 		.card {
 			width: 100%; 
 			margin: 0 0 $gutter-24 0;
 			border: none;
+
+			@include respond(tablet) {
+				width: 46.511627907%; 
+				margin: 0 0 $gutter-24 $gutter-24;
+			}
+
+			@include respond(laptop) {
+				width: 29.5031914894%; 
+				height: 100%;
+				margin: 0 0 $gutter-32 $gutter-32;
+			}
+			
+			@include respond(laptop-l) {
+				width: 22.6190476%; 
+			}
 
 			&__image {
 				object-fit: cover;
@@ -144,21 +226,14 @@
 	margin-top: $gutter-32;
 	padding: 0 $gutter-16;
 
-	// .flex-grid {
-	// 	align-items: center;
- //    	display: flex;
- //    	flex-direction: row;
-	// }
+	@include respond(tablet) {
+		padding: 0 $gutter-52;
+	}
 
-	// &__form {
-	// 	flex-grow: 1;
-	// 	margin: 0 2rem;
-	// }
-
-	// &__image {
-	// 	width: 41rem;
-	// 	flex-grow: 1;
-	// }
+	@include respond(laptop) {
+		padding: 0 $gutter-64;
+		margin-top: $gutter-64;
+	}
 
 	.flex-grid {
 		align-items: center;
@@ -168,12 +243,17 @@
 
 	&__form {
 		flex-grow: 1;
-		// margin: 0 2rem;
+		margin: 0 $gutter-32;
 	}
 
 	&__image {
-		width: 41rem;
-		flex-grow: 1;
+		display: none;
+
+		@include respond(laptop) {
+			width: 50%;
+			// flex-grow: 1;
+			display: block;
+		}
 	}
 
 }

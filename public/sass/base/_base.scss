@@ -8,8 +8,11 @@
 
 html {
 	font-size: 100%;
+	line-height: 1;
+	scroll-behavior: smooth;
 }
 
 body {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
