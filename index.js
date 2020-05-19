@@ -11,4 +11,6 @@ app.get('/', function(req, res){
 	res.render('index');
 });
 
-app.listen(port_number);
+app.listen(port_number, function(){
+    console.log('server listening');
+});
